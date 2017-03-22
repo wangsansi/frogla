@@ -1,0 +1,17 @@
+<view class="notice-main">
+<block wx:for="{{messages}}">
+    <navigator class="notice" url="message/message?id={{item.id}}">
+        <view class="notice-head">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+            <view class="userinfo">
+                <text class="userinfo-nickname">{{item.author}}</text>
+                <text class="date">{{item.date}}</text>
+            </view>
+        </view>
+        <view class="notice-body">
+            <text>{{item.title}}</text>
+            <image src="{{item.cover}}" ></image>  
+        </view>          
+    </navigator>
+</block>
+</view>

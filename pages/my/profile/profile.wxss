@@ -1,0 +1,34 @@
+page {
+  background-color: #f0f0f0;
+}
+.main {
+     margin-top: 50rpx;
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+}
+.main .profile-items {
+    width: 100%;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+}
+.profile-items.gender label  {
+    margin-right: 30rpx;
+}
+.word {
+    width:200rpx;
+}
+.house-id .building,
+.house-id .unit,
+.house-id .room{
+    padding-right: 30rpx;
+}
+button {
+    width: 600rpx;
+    background-color: #54afc5;
+    color: white;
+    margin: 30rpx auto;
+}

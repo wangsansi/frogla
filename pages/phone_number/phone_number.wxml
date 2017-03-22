@@ -1,0 +1,12 @@
+<view class="phone-numbers-title">常用电话</view>
+  <view class="phone-numbers-main">
+    <block wx:for="{{phone_numbers}}">
+     <view class="single-number">
+        <text class="single-number-organization">{{item.organization}}</text>
+        <text data-phone-num="{{item.num}}" class="single-number-num" bindtap="call">{{item.num}}</text>  
+     </view>
+    </block>
+  </view>
+
+
+

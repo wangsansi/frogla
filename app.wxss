@@ -1,0 +1,64 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;  
+} 
+
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 248193 */
+  src: url('//at.alicdn.com/t/font_xhktuadcbq3t0529.ttf') format('truetype')
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 64rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baoguo:before { content: "\e6dd"; }
+
+.icon-gengduo:before { content: "\e605"; }
+
+.icon-jiantou:before { content: "\e635"; }
+
+.icon-tousu:before { content: "\e64e"; }
+
+.icon-lianxikefu:before { content: "\e676"; }
+
+.icon-fangkexinxi:before { content: "\e61c"; }
+
+.icon-fangzi:before { content: "\e643"; }
+
+.icon-baoxiujilu:before { content: "\e657"; }
+
+.icon-touxiang:before { content: "\e623"; }
+
+.icon-jiaofei:before { content: "\e600"; }
+
+.icon-jia:before { content: "\e604"; }
+
+.icon-close:before { content: "\e608"; }
+
+.icon-weixiu:before { content: "\e64b"; }
+
+.icon-camera:before { content: "\e675"; }
+
+.icon-fangke:before { content: "\e601"; }
+
+.icon-xiaoyouju:before { content: "\e602"; }
+
+.icon-gonggao:before { content: "\e64a"; }
+
+.icon-faqitousu:before { content: "\e603"; }
+
+
+

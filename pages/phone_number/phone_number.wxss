@@ -1,0 +1,25 @@
+.phone-numbers-title {
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 48rpx;
+  color:white;
+  background-color: #328ca2;
+  width:80%;
+  margin: 30rpx auto;
+}
+.phone-numbers-main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20rpx auto;
+  background-color: rgba(50, 140, 162, 0.3);
+
+}
+.single-number {
+  display: flex;
+  justify-content: space-between;
+  padding:24rpx;
+  border-bottom: 2px solid white;
+  font-size: 40rpx;
+}

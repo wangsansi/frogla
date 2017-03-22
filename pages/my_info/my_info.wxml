@@ -1,0 +1,19 @@
+<!--pages/my_info/my_info.wxml-->
+<view class="main">
+    <view>
+        <text class="word">姓名</text>
+        <text>{{users.name}}</text>
+    </view>
+    <view>
+        <text class="word">性别</text>
+        <text>{{users.gender}}</text>
+    </view>
+    <view>
+        <text class="word">房号</text>
+        <text>{{users.roomId}}</text>
+    </view>
+    <view>
+        <text class="word">手机号</text>
+        <text>{{users.phone_number}}</text>
+    </view>
+</view>

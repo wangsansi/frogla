@@ -1,0 +1,29 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1488958579189'); /* IE9*/
+  src: url('iconfont.eot?t=1488958579189#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1488958579189') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1488958579189') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1488958579189#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiaofei:before { content: "\e600"; }
+
+.icon-weixiu:before { content: "\e64b"; }
+
+.icon-fangke:before { content: "\e601"; }
+
+.icon-xiaoyouju:before { content: "\e602"; }
+
+.icon-gonggao:before { content: "\e64a"; }
+
+.icon-faqitousu:before { content: "\e603"; }
+

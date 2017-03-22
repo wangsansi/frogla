@@ -1,0 +1,31 @@
+<!--pages/second_level/suggest/suggest.wxml-->
+<text></text>
+<view class="suggest-section">
+  <form bindsubmit="bindFormSubmit">
+    <view class="suggest-main">
+        <view class="category">
+            <radio-group name="分类">
+                <label><radio color="#54afc5" value="投诉"/>投诉</label>
+                <label><radio color="#54afc5" value="建议"/>建议</label>
+                <label><radio color="#54afc5" value="表扬"/>表扬</label>
+            </radio-group>
+        </view>
+        <textarea placeholder="请输入您的反馈（字数1000字以内）" style="height:400rpx;" maxlength="1000" name="textarea"/>
+        <view class="suggest-camera-area">
+            <view class="camera {{num == 0 ? 'hide':''}}" bindtap="upLoadImage">
+              <text class="iconfont icon-camera"></text>
+            </view>
+            <block wx:for="{{imageUrl}}">
+              <view class="camera {{num == 0 ? 'show':'hide'}}">    
+                <image data-index="{{index}}" style="width: 140rpx; height: 140rpx; background-color: #eeeeee" src="{{item}}" bindtap="preImage"  mode="aspectFill"></image>
+                <text data-index="{{index}}" class="close iconfont icon-close" bindtap="removeImage"></text>
+              </view>
+            </block>
+            <view class="camera add {{addNum == 0 ? 'show':'hide'}}" bindtap="upLoadImage">
+              <text class="iconfont icon-jia"></text>
+            </view>
+        </view>
+    </view>
+    <button form-type="submit"> 提交 </button>
+  </form>
+</view>

@@ -1,0 +1,73 @@
+/* pages/post/post.wxss */
+page {
+    background-color: #f0f0f0;
+}
+.nav {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.nav view {
+    width: 45%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;   
+}
+.selected {
+    border-bottom: 2px solid #54afc5;
+    color: #54afc5;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.main .unreceipted,
+.main .receipted {
+    position: relative;
+    z-index: 2;
+    height: 300rpx;
+    border:1px solid #54afc5;
+    display: flex;
+    margin: 30rpx;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+.expressInfo {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 40rpx;
+    width:300rpx;
+}
+.unreceipted button {
+    background-color: #54afc5;
+    color: white;
+}
+.receipted icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .no-express {
+    position: absolute;
+    top:240rpx;
+    left:220rpx;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300rpx;
+    color: rgba(84, 175, 197, 0.6);
+}
+.no-express .iconfont {
+    color: rgba(84, 175, 197, 0.6);
+    font-size: 98rpx;
+    padding-bottom: 20rpx;
+}
+.main .hide{
+    display: none;
+}

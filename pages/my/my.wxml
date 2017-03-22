@@ -1,0 +1,42 @@
+<!--logs.wxml-->
+<view class='enter'>
+  <view class='avatar'>
+    <image src="{{userInfo.avatarUrl}}" />
+  </view>
+  <view class='info'>
+    <view class='name'>{{userInfo.nickName}}</view>
+  </view>
+  <navigator url="profile/profile">
+    <button class="complect">完善信息</button>
+  </navigator>
+</view>
+<view class="main">  
+    <view class="my-items my-info">
+      <text class="iconfont icon-fangzi"></text>
+      <navigator url="../my_info/my_info"><text class="word">我的信息</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+    <view class="my-items my-repairs">
+      <text class="iconfont icon-baoxiujilu"></text>
+      <navigator url="../my_repairs/my_repairs"><text class="word">我的报事报修</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+    <view class="my-items my-suggests">
+      <text class="iconfont icon-tousu"></text>
+      <navigator url="../my_suggests/my_suggests"><text class="word">我的投诉</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+    <!--<view class="my-items my-visitors">
+      <text class="iconfont icon-fangkexinxi"></text>
+      <navigator url="../my_info/my_info"><text class="word">我的访客通行证</text></navigator>
+      <text class="iconfont icon-jiantou"></text>
+    </view>-->
+</view>
+<view class="service">
+  <view class="my-items contact-service">
+    <text class="iconfont icon-lianxikefu"></text>
+    <navigator url="../my_info/my_info"><text class="word">联系客服</text></navigator>
+    <text class="iconfont icon-jiantou"></text>
+  </view>
+</view>
+

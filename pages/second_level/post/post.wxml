@@ -1,0 +1,34 @@
+<view class="nav">
+    <view value="33" data-num="1" class="sub-banner {{_num==1 ? 'selected' : ''}}" bindtap="change">
+        <text>待签收</text>
+    </view>
+    <view data-num="2" class="sub-banner {{_num==2 ? 'selected' : ''}}" bindtap="change">
+        <text >已签收</text>
+    </view>
+</view>
+<view class="main">
+    <block wx:for="{{myExpresses}}" wx:if="{{item.state == false}}">
+        <view class=" {{_num==1 ? 'unreceipted' : 'hide'}}">
+            <view class="expressInfo">
+                <text>收件人：{{item.userId}}</text>    
+                <text>房号：{{item.roomId}}</text> 
+                <text>{{item.company}}</text>
+            </view>
+            <button data-id="{{item.id}}" bindtap="signFor">签收</button>
+        </view>
+    </block>
+    <block wx:for="{{myExpresses}}" wx:if="{{item.state == true}}">
+        <view class=" {{_num==2 ? 'receipted' : 'hide'}}">
+            <view class="expressInfo">
+                <text>收件人：{{item.userId}}</text>    
+                <text>房号：{{item.roomId}}</text> 
+                <text>{{item.company}}</text>
+            </view>
+            <icon type="success" size="30" color="green"/>
+        </view>
+    </block>
+    <view class="no-express">
+        <text class="iconfont icon-baoguo"></text>
+        <text>没有相应快件</text>
+    </view>
+</view>

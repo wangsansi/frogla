@@ -1,0 +1,9 @@
+<view class="message-title">{{current_message.title}}</view>
+<view class="message-date-author">
+    <view class="message-date">{{current_message.date}}</view>
+    <view class="message-author">{{current_message.author}}</view>
+</view>
+<view class="message-content">
+    <image src="{{current_message.cover}}"></image>
+    <text>{{current_message.content}}</text>
+</view>

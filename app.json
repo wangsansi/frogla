@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/phone_number/phone_number",
+    "pages/my/my",
+    "pages/my_info/my_info",
+    "pages/my_repairs/my_repairs",
+    "pages/my_suggests/my_suggests",
+    "pages/my/profile/profile",
+    "pages/second_level/notice/notice",
+    "pages/second_level/notice/message/message",
+    "pages/second_level/repairs/repairs",
+    "pages/second_level/post/post",
+    "pages/second_level/pay/pay",
+    "pages/second_level/suggest/suggest",
+    "pages/second_level/visitor/visitor"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "长岛之春—物业管理",
+    "navigationBarTextStyle":"black"
+  },
+   "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home2.png"
+    }, {
+      "pagePath": "pages/phone_number/phone_number",
+      "text": "常用电话",
+      "iconPath": "images/phone.png",
+      "selectedIconPath": "images/phone2.png"
+    }, {
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my2.png"
+    }]    
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
