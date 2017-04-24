@@ -1,4 +1,4 @@
 # flogra
 物业管理微信小程序
 
-<img src="_image/la.png" width=50%>
+<img src="images/la.png" width=50%>
